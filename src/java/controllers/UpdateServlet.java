@@ -75,6 +75,7 @@ public class UpdateServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
         int custID=Integer.parseInt(request.getParameter("custID"));
         String firstName= request.getParameter("firstName");
         String lastName= request.getParameter("lastName");

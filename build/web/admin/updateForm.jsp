@@ -27,7 +27,7 @@
                 <form name="updateForm" action="updateCus" method ="get">
 
                     <label> Customer ID:</label>
-                    <input type="text" name="id" value="<%= customer.getCustID()%>" readonly/>
+                    <input type="text" name="custID" value="<%= customer.getCustID()%>" readonly/>
                     <br>
                     <label> First Name </label>           
                     <input type="text" name="firstName" value="<%= customer.getFirstName()%>"/>      
