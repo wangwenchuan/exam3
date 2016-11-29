@@ -43,10 +43,10 @@
                     <input type="text" name="state" value=""/>
                     <br>
                     <label> Zip </label>
-                    <input type="text" name="addr2" value=""/>
+                    <input type="text" name="addr2" value="" required/>
                     <br>
                     <label> Email </label>
-                    <input type="text" name="emailAddr" value=""/>
+                    <input type="email" name="emailAddr" value=""/>
 
                     <br> <br>
                     <input type="reset" name="clear"   value="Clear" /> 

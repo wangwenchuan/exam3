@@ -48,10 +48,10 @@
                     <input type="text" name="state" value="<%= customer.getState()  %>"/>
                     <br>
                     <label> Zip </label>
-                    <input type="text" name="addr2" value="<%= customer.getZip() %>"/>
+                    <input type="text" name="addr2" value="<%= customer.getZip() %>" required/>
                     <br>
                     <label> Email </label>
-                    <input type="text" name="emailAddr" value="<%= customer.getEmailAddr() %>"/>
+                    <input type="email" name="emailAddr" value="<%= customer.getEmailAddr() %>"/>
 
                     <br> <br>
                     <input type="reset" name="clear"   value="Clear" /> 
