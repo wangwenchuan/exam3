@@ -140,7 +140,7 @@ public class AdReadQuery {
                 table +="</td>";
                 
                 table +="<td>";
-                table +=  "<a href=update?playerID="+customer.getCustID()+ "> Update </a>" + "<a href=delete?playerID=" + customer.getCustID()+ "> Delete </a>";
+                table +=  "<a href=update?custID="+customer.getCustID()+ "> Update </a>" + "<a href=delete?custID=" + customer.getCustID()+ "> Delete </a>";
                 table +="</td>";
                 
                 
