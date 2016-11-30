@@ -25,29 +25,29 @@
                 <form name="addForm" action="addCus" method ="get">
 
                     <label> First Name </label>           
-                    <input type="text" name="firstName" value=""/>      
+                    <input type="text" name="firstName" value="" required/>*   
                     <br>            
                     <label> Last Name</label>         
-                    <input type="text" name="lastName" value=""/>
+                    <input type="text" name="lastName" value="" required/>*
                     <br>
                     <label> Address1</label>
-                    <input type="text" name="addr1" value=""/>
+                    <input type="text" name="addr1" value="" required/>*
                     <br>
                     <label> Address2 </label>
                     <input type="text" name="addr2" value=""/>
                     <br>
                     <label> City </label>
-                    <input type="text" name="city" value=""/>
+                    <input type="text" name="city" value="" required/>*
                     <br>
                     <label> State </label>
-                    <input type="text" name="state" value=""/>
+                    <input type="text" name="state" value="" required/>*
                     <br>
                     <label> Zip </label>
-                    <input type="text" name="addr2" value="" required/>
+                    <input type="text" name="zip" value=""  required/>*
                     <br>
                     <label> Email </label>
-                    <input type="email" name="emailAddr" value=""/>
-
+                    <input type="email" name="emailAddr" value="" required/>*
+                    <p style="color: red">*=required fields</p>
                     <br> <br>
                     <input type="reset" name="clear"   value="Clear" /> 
                     <input type="submit" name="submit"   value="Submit" />  

@@ -59,7 +59,7 @@ public class UpdateQuery {
     public void doUpdate(Customer customer){
         try {
             //playerName, team, courtPosition, points
-            String query ="UPDATE customers SET firstName = ?, lastName = ?, addr1 = ?, addr2 = ?, city = ?, state = ?, zip = ?, emailAddr = ? WHERE custID =?";
+            String query ="UPDATE customers SET firstName = ?, lastName = ?, addr1 = ?, addr2 = ?, city = ?, state = ?, zip = ?, emailAddr = ? WHERE custID =? ";
             PreparedStatement ps = conn.prepareStatement(query);
             
             ps.setString(1, customer.getFirstName());

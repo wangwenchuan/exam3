@@ -5,10 +5,6 @@
  */
 package dbhelpers;
 
-/**
- *
- * @author wenchwang
- */
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
@@ -23,14 +19,14 @@ import model.Customer;
 
 /**
  *
- * @author Wenchuan
+ * @author wenchwang
  */
-public class SearchQuery {
-     private Connection conn;
+public class AdSearchQuery {
+      private Connection conn;
     
      private ResultSet results;
      
-     public SearchQuery() {
+     public AdSearchQuery() {
         Properties props = new Properties();//MWC
         InputStream instr = getClass().getResourceAsStream("dbConn.properties");
         try {
@@ -61,6 +57,7 @@ public class SearchQuery {
     
      }
      
+     
      public void doSearch(String name){
         
         try {
@@ -81,7 +78,7 @@ public class SearchQuery {
     }
      
      
-        public String getHTMLtable(){
+      public String getHTMLtable(){
         String table="";
         table += "<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/format.css\"/> <table>";
         table +="<tr>";
@@ -94,6 +91,7 @@ public class SearchQuery {
         table +="<th> State  </th>";
         table +="<th> Zip  </th>";
         table +="<th> Email  </th>";
+        table +="<th>   </th>";
         
         
         
@@ -149,7 +147,9 @@ public class SearchQuery {
                 table += customer.getEmailAddr();      
                 table +="</td>";
                 
-               
+               table +="<td>";
+                table +=  "<a href=update?custID="+customer.getCustID()+ "> Update </a>" + "<a href=delete?custID=" + customer.getCustID()+ "> Delete </a>";
+                table +="</td>";
                 
                 
                 table +="</tr>";
@@ -163,6 +163,4 @@ public class SearchQuery {
         return table;
         
     }
-        
-        
 }

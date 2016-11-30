@@ -30,29 +30,29 @@
                     <input type="text" name="custID" value="<%= customer.getCustID()%>" readonly/>
                     <br>
                     <label> First Name </label>           
-                    <input type="text" name="firstName" value="<%= customer.getFirstName()%>"/>      
+                    <input type="text" name="firstName" value="<%= customer.getFirstName()%>" required/>*     
                     <br>            
                     <label> Last Name</label>         
-                    <input type="text" name="lastName" value="<%= customer.getLastName() %>"/>
+                    <input type="text" name="lastName" value="<%= customer.getLastName() %>" required/>*
                     <br>
                     <label> Address1</label>
-                    <input type="text" name="addr1" value="<%= customer.getAddr1()  %>"/>
+                    <input type="text" name="addr1" value="<%= customer.getAddr1()  %>" required/>*
                     <br>
                     <label> Address2 </label>
                     <input type="text" name="addr2" value="<%= customer.getAddr2() %>"/>
                     <br>
                     <label> City </label>
-                    <input type="text" name="city" value="<%= customer.getCity() %>"/>
+                    <input type="text" name="city" value="<%= customer.getCity() %>" required/>*
                     <br>
                     <label> State </label>
-                    <input type="text" name="state" value="<%= customer.getState()  %>"/>
+                    <input type="text" name="state" value="<%= customer.getState()  %>" required/>*
                     <br>
                     <label> Zip </label>
-                    <input type="text" name="addr2" value="<%= customer.getZip() %>" required/>
+                    <input type="text" name="zip" value="<%= customer.getZip() %>"  required/>*
                     <br>
                     <label> Email </label>
-                    <input type="email" name="emailAddr" value="<%= customer.getEmailAddr() %>"/>
-
+                    <input type="email" name="emailAddr" value="<%= customer.getEmailAddr() %>" required/>*
+                    <p style="color: red">*=required fields</p>
                     <br> <br>
                     <input type="reset" name="clear"   value="Clear" /> 
                     <input type="submit" name="submit"   value="Update" />  
