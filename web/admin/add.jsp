@@ -40,10 +40,10 @@
                     <input type="text" name="city" value="" required/>*
                     <br>
                     <label> State </label>
-                    <input type="text" name="state" value="" required/>*
+                    <input type="text" name="state" maxlength="2" value="" required/>*
                     <br>
                     <label> Zip </label>
-                    <input type="text" name="zip" value=""  required/>*
+                    <input type="text" name="zip" maxlength="5" value=""  required/>*
                     <br>
                     <label> Email </label>
                     <input type="email" name="emailAddr" value="" required/>*

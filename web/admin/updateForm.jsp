@@ -45,10 +45,10 @@
                     <input type="text" name="city" value="<%= customer.getCity() %>" required/>*
                     <br>
                     <label> State </label>
-                    <input type="text" name="state" value="<%= customer.getState()  %>" required/>*
+                    <input type="text" name="state" maxlength="2" value="<%= customer.getState()  %>" required/>*
                     <br>
                     <label> Zip </label>
-                    <input type="text" name="zip" value="<%= customer.getZip() %>"  required/>*
+                    <input type="text" name="zip" maxlength="5" value="<%= customer.getZip() %>"  required/>*
                     <br>
                     <label> Email </label>
                     <input type="email" name="emailAddr" value="<%= customer.getEmailAddr() %>" required/>*
